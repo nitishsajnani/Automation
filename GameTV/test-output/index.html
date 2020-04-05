@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />  
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-Default_suite">
+              <span class="suite-name border-passed">Default suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-Default_suite">
+                    <span>C:\Users\NitishSajnani\AppData\Local\Temp\testng-eclipse-1090165345\testng-customsuite.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-Default_suite">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-Default_suite">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-Default_suite">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-Default_suite">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-Default_suite">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-Default_suite">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">3 methods,   3 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Default_suite" class="hide-methods passed suite-Default_suite"> (hide)</a> <!-- hide-methods passed suite-Default_suite -->
+                      <a href="#" panel-name="suite-Default_suite" class="show-methods passed suite-Default_suite"> (show)</a> <!-- show-methods passed suite-Default_suite -->
+                    </span>
+                    <div class="method-list-content passed suite-Default_suite">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="TestCases.GetDeatilsOFApps" hash-for-method="TC001_ScrollApplicationToAvailableGames">TC001_ScrollApplicationToAvailableGames</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="TestCases.GetDeatilsOFApps" hash-for-method="TC002_CountGamesInTheApplication">TC002_CountGamesInTheApplication</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="TestCases.GetDeatilsOFApps" hash-for-method="TC003_LaunchGameAndPrintDetailsOfGame">TC003_LaunchGameAndPrintDetailsOfGame</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Default_suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Default_suite" class="panel Default_suite">
+          <div class="suite-Default_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">TestCases.GetDeatilsOFApps</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC001_ScrollApplicationToAvailableGames">
+                  </a> <!-- TC001_ScrollApplicationToAvailableGames -->
+                  <span class="method-name">TC001_ScrollApplicationToAvailableGames</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC002_CountGamesInTheApplication">
+                  </a> <!-- TC002_CountGamesInTheApplication -->
+                  <span class="method-name">TC002_CountGamesInTheApplication</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC003_LaunchGameAndPrintDetailsOfGame">
+                  </a> <!-- TC003_LaunchGameAndPrintDetailsOfGame -->
+                  <span class="method-name">TC003_LaunchGameAndPrintDetailsOfGame</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Default_suite-class-passed -->
+        </div> <!-- panel Default_suite -->
+        <div panel-name="test-xml-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">C:\Users\NitishSajnani\AppData\Local\Temp\testng-eclipse-1090165345\testng-customsuite.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Default suite&quot;&gt;
+  &lt;test verbose=&quot;2&quot; name=&quot;Default test&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;TestCases.GetDeatilsOFApps&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Default test --&gt;
+&lt;/suite&gt; &lt;!-- Default suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Default suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Default test (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Default suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Default suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Default_suite');
+function tableData_Default_suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(3);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'TC003_LaunchGameAndPrintDetailsOfGame')
+data.setCell(0, 2, 'TestCases.GetDeatilsOFApps')
+data.setCell(0, 3, 307278);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'TC001_ScrollApplicationToAvailableGames')
+data.setCell(1, 2, 'TestCases.GetDeatilsOFApps')
+data.setCell(1, 3, 585);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'TC002_CountGamesInTheApplication')
+data.setCell(2, 2, 'TestCases.GetDeatilsOFApps')
+data.setCell(2, 3, 52);
+window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 5 minutes</span>
+              <div id="times-div-Default_suite">
+              </div> <!-- times-div-Default_suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Default suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">TC002_CountGamesInTheApplication</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Number of games in Game TV are: 100</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">TC001_ScrollApplicationToAvailableGames</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">User scroll the application to the available games section</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">TC003_LaunchGameAndPrintDetailsOfGame</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">|#  |Game Name                                                               |Page URL                                                                                                                                               |Page status |Tournament Count|</span>
+                <span class="reporter-method-output">|1  |Garena Free Fire Tournaments                                            |https://www.game.tv/find-tournaments/garena-free-fire-spooky-night-tournaments                                                                         |200         |15,191          |</span>
+                <span class="reporter-method-output">|2  |Brawl Stars Tournaments                                                 |https://www.game.tv/find-tournaments/brawl-stars-tournaments                                                                                           |200         |12,653          |</span>
+                <span class="reporter-method-output">|3  |Clash Royale Tournaments                                                |https://www.game.tv/find-tournaments/clash-royale-tournaments                                                                                          |200         |5,012           |</span>
+                <span class="reporter-method-output">|4  |PUBG MOBILE Tournaments                                                 |https://www.game.tv/find-tournaments/pubg-mobile-tournaments                                                                                           |200         |4,463           |</span>
+                <span class="reporter-method-output">|5  |Call of Duty Tournaments                                                |https://www.game.tv/find-tournaments/call-of-duty-tournaments                                                                                          |200         |3,164           |</span>
+                <span class="reporter-method-output">|6  |Clash of Clans Tournaments                                              |https://www.game.tv/find-tournaments/clash-of-clans-tournaments                                                                                        |200         |2,865           |</span>
+                <span class="reporter-method-output">|7  |8 Ball Pool Tournaments                                                 |https://www.game.tv/find-tournaments/8-ball-pool-tournaments                                                                                           |200         |2,173           |</span>
+                <span class="reporter-method-output">|8  |Mobile Legends: Bang Bang Tournaments                                   |https://www.game.tv/find-tournaments/mobile-legends-bang-bang-tournaments                                                                              |200         |1,576           |</span>
+                <span class="reporter-method-output">|9  |Arena of Valor Tournaments                                              |https://www.game.tv/find-tournaments/arena-of-valor-tournaments                                                                                        |200         |1,587           |</span>
+                <span class="reporter-method-output">|10 |Auto Chess Tournaments                                                  |https://www.game.tv/find-tournaments/auto-chess-tournaments                                                                                            |200         |1,392           |</span>
+                <span class="reporter-method-output">|11 |Head Ball 2 Tournaments                                                 |https://www.game.tv/find-tournaments/head-ball-2-tournaments                                                                                           |200         |1,097           |</span>
+                <span class="reporter-method-output">|12 |Rumble Stars Football Tournaments                                       |https://www.game.tv/find-tournaments/rumble-stars-football-tournaments                                                                                 |200         |1,152           |</span>
+                <span class="reporter-method-output">|13 |Yu-Gi-Oh! Duel Links Tournaments                                        |https://www.game.tv/find-tournaments/yu-gi-oh-duel-links-tournaments                                                                                   |200         |809             |</span>
+                <span class="reporter-method-output">|14 |Ludo King Tournaments                                                   |https://www.game.tv/find-tournaments/ludo-king-tournaments                                                                                             |200         |1,143           |</span>
+                <span class="reporter-method-output">|15 |Hearthstone Tournaments                                                 |https://www.game.tv/find-tournaments/hearthstone-tournaments                                                                                           |200         |562             |</span>
+                <span class="reporter-method-output">|16 |World Cricket Championship 2 - WCC2 Tournaments                         |https://www.game.tv/find-tournaments/world-cricket-championship-2-wcc2-tournaments                                                                     |200         |571             |</span>
+                <span class="reporter-method-output">|17 |Dota Underlords Tournaments                                             |https://www.game.tv/find-tournaments/dota-underlords-tournaments                                                                                       |200         |446             |</span>
+                <span class="reporter-method-output">|18 |Chess Rush Tournaments                                                  |https://www.game.tv/find-tournaments/chess-rush-tournaments                                                                                            |200         |421             |</span>
+                <span class="reporter-method-output">|19 |Fortnite Tournaments                                                    |https://www.game.tv/find-tournaments/fortnite-tournaments                                                                                              |200         |447             |</span>
+                <span class="reporter-method-output">|20 |FIFA Soccer Tournaments                                                 |https://www.game.tv/find-tournaments/fifa-soccer-tournaments                                                                                           |200         |395             |</span>
+                <span class="reporter-method-output">|21 |Animal Tower Battle Tournaments                                         |https://www.game.tv/find-tournaments/animal-tower-battle-tournaments                                                                                   |200         |351             |</span>
+                <span class="reporter-method-output">|22 |Royal Dice : Random Defense Tournaments                                 |https://www.game.tv/find-tournaments/royal-dice-random-defense-tournaments                                                                             |200         |405             |</span>
+                <span class="reporter-method-output">|23 |Bloons TD Battles Tournaments                                           |https://www.game.tv/find-tournaments/bloons-td-battles-tournaments                                                                                     |200         |330             |</span>
+                <span class="reporter-method-output">|24 |Badland Brawl Tournaments                                               |https://www.game.tv/find-tournaments/badland-brawl-tournaments                                                                                         |200         |271             |</span>
+                <span class="reporter-method-output">|25 |Captain Tsubasa: Dream Team Tournaments                                 |https://www.game.tv/find-tournaments/captain-tsubasa-dream-team-tournaments                                                                            |200         |268             |</span>
+                <span class="reporter-method-output">|26 |Smashing four Tournaments                                               |https://www.game.tv/find-tournaments/smashing-four-tournaments                                                                                         |200         |342             |</span>
+                <span class="reporter-method-output">|27 |DRAGON BALL LEGENDS Tournaments                                         |https://www.game.tv/find-tournaments/dragon-ball-legends-tournaments                                                                                   |200         |220             |</span>
+                <span class="reporter-method-output">|28 |Cyber Hunter Tournaments                                                |https://www.game.tv/find-tournaments/cyber-hunter-tournaments                                                                                          |200         |214             |</span>
+                <span class="reporter-method-output">|29 |Saint Seiya Awakening: Knights of the Zodiac Tournaments                |https://www.game.tv/find-tournaments/saint-seiya-awakening-knights-of-the-zodiac-tournaments                                                           |200         |186             |</span>
+                <span class="reporter-method-output">|30 |Shadowverse CCG Tournaments                                             |https://www.game.tv/find-tournaments/shadowverse-ccg-tournaments                                                                                       |200         |150             |</span>
+                <span class="reporter-method-output">|31 |The King of Fighters ALLSTAR Tournaments                                |https://www.game.tv/find-tournaments/the-king-of-fighters-allstar-tournaments                                                                          |200         |156             |</span>
+                <span class="reporter-method-output">|32 |Skidstorm Tournaments                                                   |https://www.game.tv/find-tournaments/skidstorm-tournaments                                                                                             |200         |181             |</span>
+                <span class="reporter-method-output">|33 |Rocket League Tournaments                                               |https://www.game.tv/find-tournaments/rocket-league-tournaments                                                                                         |200         |176             |</span>
+                <span class="reporter-method-output">|34 |Soccer Stars Tournaments                                                |https://www.game.tv/find-tournaments/soccer-stars-tournaments                                                                                          |200         |190             |</span>
+                <span class="reporter-method-output">|35 |War Robots Multiplayer Battles Tournaments                              |https://www.game.tv/find-tournaments/war-robots-multiplayer-battles-tournaments                                                                        |200         |107             |</span>
+                <span class="reporter-method-output">|36 |PUBG Tournaments                                                        |https://www.game.tv/find-tournaments/pubg-tournaments                                                                                                  |200         |173             |</span>
+                <span class="reporter-method-output">|37 |Arena of Evolution: Red Tides Tournaments                               |https://www.game.tv/find-tournaments/arena-of-evolution-red-tides-tournaments                                                                          |200         |101             |</span>
+                <span class="reporter-method-output">|38 |Counter Strike: Global Offensive Tournaments                            |https://www.game.tv/find-tournaments/counter-strike-global-offensive-tournaments                                                                       |200         |105             |</span>
+                <span class="reporter-method-output">|39 |BnB M Tournaments                                                       |https://www.game.tv/find-tournaments/bnb-m-tournaments                                                                                                 |200         |90              |</span>
+                <span class="reporter-method-output">|40 |Castle Burn - RTS Revolution Tournaments                                |https://www.game.tv/find-tournaments/castle-burn-rts-revolution-tournaments                                                                            |200         |81              |</span>
+                <span class="reporter-method-output">|41 |Chess · Play & Learn Tournaments                                        |https://www.game.tv/find-tournaments/chess-play-learn-tournaments                                                                                      |200         |                |</span>
+                <span class="reporter-method-output">|42 |Fortnite PC Tournaments                                                 |https://www.game.tv/find-tournaments/fortnite-pc-tournaments                                                                                           |200         |142             |</span>
+                <span class="reporter-method-output">|43 |Counter Attack - Multiplayer FPS Tournaments                            |https://www.game.tv/find-tournaments/counter-attack-multiplayer-fps-tournaments                                                                        |200         |71              |</span>
+                <span class="reporter-method-output">|44 |League of Legends: LoL Tournaments                                      |https://www.game.tv/find-tournaments/league-of-legends-lol-tournaments                                                                                 |200         |114             |</span>
+                <span class="reporter-method-output">|45 |Asphalt 9: Legends - 2019's Action Car Racing Game Tournaments          |https://www.game.tv/find-tournaments/asphalt-9-legends-2019-s-action-car-racing-game-tournaments                                                       |200         |64              |</span>
+                <span class="reporter-method-output">|46 |ゼノンザード ZENONZARD Tournaments                                            |https://www.game.tv/find-tournaments/zenonzado-zenonzard-tournaments                                                                                   |200         |59              |</span>
+                <span class="reporter-method-output">|47 |Summoners War Tournaments                                               |https://www.game.tv/find-tournaments/summoners-war-tournaments                                                                                         |200         |56              |</span>
+                <span class="reporter-method-output">|48 |決戰！平安京 (Onmyoji Arena) Tournaments                                      |https://www.game.tv/find-tournaments/jue-zhan-ping-an-jing-onmyoji-arena-tournaments                                                                   |200         |46              |</span>
+                <span class="reporter-method-output">|49 |Lords Mobile: Battle of the Empires - Strategy RPG Tournaments          |https://www.game.tv/find-tournaments/lords-mobile-battle-of-the-empires-strategy-rpg-tournaments                                                       |200         |44              |</span>
+                <span class="reporter-method-output">|50 |Battle of Arrows Tournaments                                            |https://www.game.tv/find-tournaments/-battle-of-arrows-tournaments                                                                                     |200         |44              |</span>
+                <span class="reporter-method-output">|51 |달빛조각사 (Moonlight Tournaments                                            |https://www.game.tv/find-tournaments/dalbicjogagsa-moonlight-tournaments                                                                               |200         |43              |</span>
+                <span class="reporter-method-output">|52 |Pixel Gun 3D: FPS Shooter & Battle Royale Tournaments                   |https://www.game.tv/find-tournaments/pixel-gun-3d-fps-shooter-battle-royale-tournaments                                                                |200         |39              |</span>
+                <span class="reporter-method-output">|53 |Onmyoji Chess Tournaments                                               |https://www.game.tv/find-tournaments/onmyoji-chess-tournaments                                                                                         |200         |36              |</span>
+                <span class="reporter-method-output">|54 |Dr. Mario World Tournaments                                             |https://www.game.tv/find-tournaments/dr-mario-world-tournaments                                                                                        |200         |27              |</span>
+                <span class="reporter-method-output">|55 |Dragalia Lost Tournaments                                               |https://www.game.tv/find-tournaments/dragalia-lost-tournaments                                                                                         |200         |30              |</span>
+                <span class="reporter-method-output">|56 |Tom Clancy's Rainbow Six Siege Tournaments                              |https://www.game.tv/find-tournaments/-tom-clancy's-rainbow-six-siege-tournaments                                                                       |200         |43              |</span>
+                <span class="reporter-method-output">|57 |Overwatch Tournaments                                                   |https://www.game.tv/find-tournaments/overwatch-tournaments                                                                                             |200         |26              |</span>
+                <span class="reporter-method-output">|58 |Roblox Tournaments                                                      |https://www.game.tv/find-tournaments/-roblox-tournaments                                                                                               |200         |47              |</span>
+                <span class="reporter-method-output">|59 |Minecraft Tournaments                                                   |https://www.game.tv/find-tournaments/-minecraft-tournaments                                                                                            |200         |43              |</span>
+                <span class="reporter-method-output">|60 |에오스 레드 (Eos Red) Tournaments                                            |https://www.game.tv/find-tournaments/eoseu-redeu-eos-red-tournaments                                                                                   |200         |22              |</span>
+                <span class="reporter-method-output">|61 |Mini Militia Tournaments                                                |https://www.game.tv/find-tournaments/mini-militia-tournaments                                                                                          |200         |73              |</span>
+                <span class="reporter-method-output">|62 |Super Smash Bros. Ultimate Tournaments                                  |https://www.game.tv/find-tournaments/-super-smash-bros.-ultimate-tournaments                                                                           |200         |22              |</span>
+                <span class="reporter-method-output">|63 |TEPPEN Tournaments                                                      |https://www.game.tv/find-tournaments/teppen-tournaments                                                                                                |200         |19              |</span>
+                <span class="reporter-method-output">|64 |Paladins Tournaments                                                    |https://www.game.tv/find-tournaments/-paladins-tournaments                                                                                             |200         |28              |</span>
+                <span class="reporter-method-output">|65 |Pokémon sword and shield Tournaments                                    |https://www.game.tv/find-tournaments/-pok%C3%A9mon-sword-and-shield--tournaments                                                                       |200         |20              |</span>
+                <span class="reporter-method-output">|66 |Standoff 2 Tournaments                                                  |https://www.game.tv/find-tournaments/-standoff-2-tournaments                                                                                           |200         |23              |</span>
+                <span class="reporter-method-output">|67 |Critical Ops: Multiplayer FPS Tournaments                               |https://www.game.tv/find-tournaments/critical-ops-multiplayer-fps-tournaments                                                                          |200         |18              |</span>
+                <span class="reporter-method-output">|68 |Modern Warfare Tournaments                                              |https://www.game.tv/find-tournaments/-modern-warfare-tournaments                                                                                       |200         |17              |</span>
+                <span class="reporter-method-output">|69 |GTA 5 Tournaments                                                       |https://www.game.tv/find-tournaments/-gta-5--tournaments                                                                                               |200         |13              |</span>
+                <span class="reporter-method-output">|70 |Garena Speed Drifters Tournaments                                       |https://www.game.tv/find-tournaments/garena-speed-drifters-tournaments                                                                                 |200         |13              |</span>
+                <span class="reporter-method-output">|71 |轟啊坦克 (FortressGo) Tournaments                                           |https://www.game.tv/find-tournaments/hong-a-tan-ke-fortressgo-tournaments                                                                              |200         |12              |</span>
+                <span class="reporter-method-output">|72 |Destiny 2 Tournaments                                                   |https://www.game.tv/find-tournaments/-destiny-2-tournaments                                                                                            |200         |18              |</span>
+                <span class="reporter-method-output">|73 |Baram Tournaments                                                       |https://www.game.tv/find-tournaments/baram-tournaments                                                                                                 |200         |28              |</span>
+                <span class="reporter-method-output">|74 |Fleet Battle Tournaments                                                |https://www.game.tv/find-tournaments/-fleet-battle-tournaments                                                                                         |200         |15              |</span>
+                <span class="reporter-method-output">|75 |Brawlhalla Tournaments                                                  |https://www.game.tv/find-tournaments/-brawlhalla-tournaments                                                                                           |200         |16              |</span>
+                <span class="reporter-method-output">|76 |Tekken 7 Tournaments                                                    |https://www.game.tv/find-tournaments/-tekken-7-tournaments                                                                                             |200         |14              |</span>
+                <span class="reporter-method-output">|77 |Vainglory Tournaments                                                   |https://www.game.tv/find-tournaments/-vainglory-tournaments                                                                                            |200         |10              |</span>
+                <span class="reporter-method-output">|78 |Audition Mobile TH Tournaments                                          |https://www.game.tv/find-tournaments/audition-mobile-th-tournaments                                                                                    |200         |10              |</span>
+                <span class="reporter-method-output">|79 |LINE Let's Get Rich Tournaments                                         |https://www.game.tv/find-tournaments/line-let-s-get-rich-tournaments                                                                                   |200         |10              |</span>
+                <span class="reporter-method-output">|80 |Golf Blitz Tournaments                                                  |https://www.game.tv/find-tournaments/-golf-blitz-tournaments                                                                                           |200         |9               |</span>
+                <span class="reporter-method-output">|81 |Pokemon Showdown Tournaments                                            |https://www.game.tv/find-tournaments/-pokemon-showdown-tournaments                                                                                     |200         |10              |</span>
+                <span class="reporter-method-output">|82 |ドラゴンクエストライバルズ (Dragon Quest Rivals) Tournaments                         |https://www.game.tv/find-tournaments/doragonkuesutoraibaruzu-dragon-quest-rivals-tournaments                                                           |200         |8               |</span>
+                <span class="reporter-method-output">|83 |Dota 2 Tournaments                                                      |https://www.game.tv/find-tournaments/dota-2-tournaments                                                                                                |200         |11              |</span>
+                <span class="reporter-method-output">|84 |Frag Pro Shooter Tournaments                                            |https://www.game.tv/find-tournaments/-frag-pro-shooter-tournaments                                                                                     |200         |10              |</span>
+                <span class="reporter-method-output">|85 |Dead by Daylight Tournaments                                            |https://www.game.tv/find-tournaments/-dead-by-daylight-tournaments                                                                                     |200         |6               |</span>
+                <span class="reporter-method-output">|86 |Compass Tournaments                                                     |https://www.game.tv/find-tournaments/-%E3%82%B3%E3%83%B3%E3%83%91%E3%82%B9-%E6%88%A6%E9%97%98%E6%91%82%E7%90%86%E8%A7%A3%E6%9E%90%E3%82%B7%E3%82%B9%E3%83%86%E3%83%A0-tournaments |200         |                |</span>
+                <span class="reporter-method-output">|87 |Jurassic World Alive Tournaments                                        |https://www.game.tv/find-tournaments/jurassic-world-alive-tournaments                                                                                  |200         |5               |</span>
+                <span class="reporter-method-output">|88 |SMITE Tournaments                                                       |https://www.game.tv/find-tournaments/smite-tournaments                                                                                                 |200         |10              |</span>
+                <span class="reporter-method-output">|89 |Identity V Tournaments                                                  |https://www.game.tv/find-tournaments/identity-v-tournaments                                                                                            |200         |4               |</span>
+                <span class="reporter-method-output">|90 |BLACK DESERT MOBILE Tournaments                                         |https://www.game.tv/find-tournaments/-black-desert-mobile-tournaments                                                                                  |200         |6               |</span>
+                <span class="reporter-method-output">|91 |Real Cricket™ 19 Tournaments                                            |https://www.game.tv/find-tournaments/-real-cricket%E2%84%A2-19-tournaments                                                                             |200         |3               |</span>
+                <span class="reporter-method-output">|92 |World of Tanks Blitz MMO Tournaments                                    |https://www.game.tv/find-tournaments/-world-of-tanks-blitz-mmo-tournaments                                                                             |200         |3               |</span>
+                <span class="reporter-method-output">|93 |Survival Heroes - MOBA Battle Royale Tournaments                        |https://www.game.tv/find-tournaments/survival-heroes-moba-battle-royale-tournaments                                                                    |200         |3               |</span>
+                <span class="reporter-method-output">|94 |MORDHAU Tournaments                                                     |https://www.game.tv/find-tournaments/-mordhau-tournaments                                                                                              |200         |2               |</span>
+                <span class="reporter-method-output">|95 |Durango Tournaments                                                     |https://www.game.tv/find-tournaments/durango-tournaments                                                                                               |200         |2               |</span>
+                <span class="reporter-method-output">|96 |Extrordinary Ones: 5V5 MOBA Tournaments                                 |https://www.game.tv/find-tournaments/extrordinary-ones-5v5-moba-tournaments                                                                            |200         |2               |</span>
+                <span class="reporter-method-output">|97 |Among Us Tournaments                                                    |https://www.game.tv/find-tournaments/-among-us-tournaments                                                                                             |200         |2               |</span>
+                <span class="reporter-method-output">|98 |StarCraft 2 Tournaments                                                 |https://www.game.tv/find-tournaments/-starcraft-2-tournaments                                                                                          |200         |2               |</span>
+                <span class="reporter-method-output">|99 |Temtem Tournaments                                                      |https://www.game.tv/find-tournaments/-temtem-tournaments                                                                                               |200         |8               |</span>
+                <span class="reporter-method-output">|100|Darwin Project Tournaments                                              |https://www.game.tv/find-tournaments/-darwin-project-tournaments                                                                                       |200         |1               |</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">TestCases.GetDeatilsOFApps</div> <!-- chronological-class-name -->
+              <div class="configuration-suite before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-suite before -->
+              <div class="test-method">
+                <span class="method-name">TC001_ScrollApplicationToAvailableGames</span>
+                <span class="method-start">9846 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TC002_CountGamesInTheApplication</span>
+                <span class="method-start">10433 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TC003_LaunchGameAndPrintDetailsOfGame</span>
+                <span class="method-start">10487 ms</span>
+              </div> <!-- test-method -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>
